@@ -1,0 +1,29 @@
+.gallery__list {
+  --grid-item: 3;
+  display: flex;
+}
+.gallery {
+  padding-bottom: 94px;
+}
+.gallery__item {
+  position: relative;
+  font-weight: 700;
+  size: 14px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.gallery__prg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  width: 370px;
+  height: 70px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+}

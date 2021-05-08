@@ -1,0 +1,71 @@
+.current {
+  color: var(--accent-color--);
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--accent-color--);
+    border-radius: 2px;
+  }
+}
+.header {
+  background-color: var(--header-color--);
+  letter-spacing: 0.02em;
+  display: block;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+  align-items: center;
+  display: block;
+}
+.navigation__link {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 25px;
+}
+.navigation {
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+.contacts {
+  color: var(--text--color--);
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  /*margin-right: 50px;*/
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__icon--card,
+.contacts__icon--phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
